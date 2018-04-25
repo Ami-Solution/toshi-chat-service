@@ -41,9 +41,24 @@ See <http://www.wassenaar.org/> for more information.
 The U.S. Government Department of Commerce, Bureau of Industry and Security (BIS), has classified this software as Export Commodity Control Number (ECCN) 5D002.C.1, which includes information security software using or performing cryptographic functions with asymmetric algorithms.
 The form and manner of this distribution makes it eligible for export under the License Exception ENC Technology Software Unrestricted (TSU) exception (see the BIS Export Administration Regulations, Section 740.13) for both object code and source code.
 
-License
----------------------
+- - -
 
-Copyright 2013-2016 Open Whisper Systems
+Copyright &copy; 2013-2016 Open Whisper Systems
 
-Licensed under the AGPLv3: https://www.gnu.org/licenses/agpl-3.0.html
+Copyright &copy; 2017-2018 Toshi Holdings Pte. Ltd. &lt;[https://www.toshi.org/](https://www.toshi.org/)&gt;
+
+"Toshi" is a registered trade mark. This License does not grant
+permission to use the trade names, trademarks, service marks, or
+product names of the Licensor.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the version 3 of the GNU Affero General Public License
+as published by the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program. If not, see &lt;[https://www.gnu.org/licenses/](http://www.gnu.org/licenses/)&gt;.
