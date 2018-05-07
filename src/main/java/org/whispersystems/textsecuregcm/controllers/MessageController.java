@@ -28,6 +28,7 @@ import org.whispersystems.textsecuregcm.entities.MismatchedDevices;
 import org.whispersystems.textsecuregcm.entities.OutgoingMessageEntity;
 import org.whispersystems.textsecuregcm.entities.OutgoingMessageEntityList;
 import org.whispersystems.textsecuregcm.entities.SendMessageResponse;
+import org.whispersystems.textsecuregcm.entities.OkResponse;
 import org.whispersystems.textsecuregcm.entities.StaleDevices;
 import org.whispersystems.textsecuregcm.federation.FederatedClient;
 import org.whispersystems.textsecuregcm.federation.FederatedClientManager;
@@ -160,7 +161,8 @@ public class MessageController {
   @Timed
   @DELETE
   @Path("/{source}/{timestamp}")
-  public void removePendingMessage(@Auth Account account,
+  @Produces(MediaType.APPLICATION_JSON)
+  public OkResponse removePendingMessage(@Auth Account account,
                                    @PathParam("source") String source,
                                    @PathParam("timestamp") long timestamp)
       throws IOException
@@ -183,6 +185,7 @@ public class MessageController {
     } catch (NoSuchUserException | TransientPushFailureException e) {
       logger.warn("Sending delivery receipt", e);
     }
+    return new OkResponse(true);
   }
 
 
