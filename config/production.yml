@@ -80,3 +80,8 @@ apn: # Apple Push Notifications configuration
 gcm: # GCM Configuration
   senderId:
   apiKey:
+
+limits:
+  prekeys:
+    bucketSize: 50000
+    leakRatePerMinute: 50000
